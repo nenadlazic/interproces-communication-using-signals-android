@@ -1,0 +1,7 @@
+adb shell kill -s 10 process_id
+
+You can get process_id using the folowing command:
+adb shell top | grep "signal_handler_test"
+
+To track signal form process with process_id pr_id you can use this command:
+adb shell strace -p 210
